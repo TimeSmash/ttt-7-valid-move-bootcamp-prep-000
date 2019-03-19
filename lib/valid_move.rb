@@ -9,8 +9,7 @@
 #We want to make sure BOTH of these happen in order to make a move
 
 def valid_move?(board, index)
-  int = index.to_i
-  if !position_taken?(board, int) && board[int].between?(0,8)
+  if !position_taken?(board, index) && board[index].between?(0,8)
     return true
   else
     return false
