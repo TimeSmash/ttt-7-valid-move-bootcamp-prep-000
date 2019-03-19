@@ -6,7 +6,7 @@
 def valid_move?(board, index) 
   #is the move a position on the game board? Board has cells 1-9, which means an array from 0-8
   if position_taken?
-     if (board[index].between(0,8) {
+     if (board[index].between?(0,8) {
     return true
   } else {
     return false
